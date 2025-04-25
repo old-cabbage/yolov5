@@ -1,0 +1,11 @@
+
+# usage:　python train.py --data drone.yaml --weights weights\drone-birdv2.pt --img 640 --batch-size 16 --epochs 50 --device 0
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: data/drone_detection_dataset/train
+val: data/drone_detection_dataset/valid
+
+# number of classes
+nc: 2
+
+# class names
+names: ['bird', 'drone']
